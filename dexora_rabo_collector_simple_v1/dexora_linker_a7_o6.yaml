@@ -1,0 +1,58 @@
+# 用于给 Dexora-VLA 增加 Linker A7 + O6 embodiment 时的明确映射。
+# Dexora 的 loader/config 字段可能随版本变化；核心原则是禁止默认截取36维。
+# 本文件的关节名与 config.yaml 的 state_names / full_state_names 严格一致。
+robot_type: linker_a7_o6_bimanual
+control_frequency: 20
+state_dim: 26
+action_dim: 26
+full_state_dim: 36
+
+# observation.state / action 的 26 维顺序（7+7+6+6，手取 6 个主动关节）。
+joint_order:
+  - left_arm_joint_1
+  - left_arm_joint_2
+  - left_arm_joint_3
+  - left_arm_joint_4
+  - left_arm_joint_5
+  - left_arm_joint_6
+  - left_arm_joint_7
+  - right_arm_joint_1
+  - right_arm_joint_2
+  - right_arm_joint_3
+  - right_arm_joint_4
+  - right_arm_joint_5
+  - right_arm_joint_6
+  - right_arm_joint_7
+  - left_hand_thumb_cmc_yaw
+  - left_hand_thumb_cmc_pitch
+  - left_hand_index_mcp_pitch
+  - left_hand_middle_mcp_pitch
+  - left_hand_ring_mcp_pitch
+  - left_hand_pinky_mcp_pitch
+  - right_hand_thumb_cmc_yaw
+  - right_hand_thumb_cmc_pitch
+  - right_hand_index_mcp_pitch
+  - right_hand_middle_mcp_pitch
+  - right_hand_ring_mcp_pitch
+  - right_hand_pinky_mcp_pitch
+
+# 每只手 11 关节的 DOF 顺序（与 get_joint_angles() 一致），用于展开 6 主动 -> 11 全关节。
+hand_joint_order:
+  - thumb_cmc_yaw
+  - thumb_cmc_pitch
+  - thumb_ip
+  - index_mcp_pitch
+  - index_dip
+  - middle_mcp_pitch
+  - middle_dip
+  - ring_mcp_pitch
+  - ring_dip
+  - pinky_mcp_pitch
+  - pinky_dip
+
+# 6 个主动关节在 11 维 DOF 顺序中的下标。
+hand_active_indices: [0, 1, 3, 5, 7, 9]
+
+# 推理时如何把 6 个主动角执行到 O6，必须由新的写入烟雾测试/标定确认。
+# 在确认前不得假定被动关节可按固定比例展开。
+hand_action_executor: pending_benchmark

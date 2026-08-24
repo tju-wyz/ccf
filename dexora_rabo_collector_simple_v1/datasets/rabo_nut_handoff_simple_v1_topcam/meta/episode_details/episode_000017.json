@@ -1,0 +1,49 @@
+{
+  "episode_index": 17,
+  "length": 593,
+  "tasks": [
+    "右手按B、C、A的顺序抓取螺母，逐个交给左手完成放置"
+  ],
+  "success": false,
+  "failure_reason": "",
+  "sample_timeouts": 0,
+  "stale_samples": 0,
+  "camera_stale_samples": 0,
+  "camera_skew_s": 0.0,
+  "joint_skew_s": 0.0,
+  "writer_queue_drops": 0,
+  "max_stamp_gap_s": 0.20000000000000284,
+  "camera_reuse_counts": {
+    "top": 276
+  },
+  "sim_fps": 5.0,
+  "quality_pass": true,
+  "randomization": {
+    "nut_poses": {
+      "B": [
+        -0.3282819609115399,
+        -0.17890374364862244,
+        0.2806,
+        0,
+        0,
+        0.5233
+      ],
+      "A": [
+        -0.22099436376455087,
+        -0.1053352957981237,
+        0.2819,
+        0,
+        0,
+        0.5233
+      ],
+      "C": [
+        -0.287792207902248,
+        -0.045224071329283785,
+        0.2872,
+        0,
+        0,
+        0.5233
+      ]
+    }
+  }
+}

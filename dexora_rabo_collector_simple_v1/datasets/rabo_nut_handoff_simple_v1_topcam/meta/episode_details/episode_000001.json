@@ -1,0 +1,49 @@
+{
+  "episode_index": 1,
+  "length": 197,
+  "tasks": [
+    "使用右臂抓取、左臂接取并摆放B、C、A三个螺母"
+  ],
+  "success": false,
+  "failure_reason": "",
+  "sample_timeouts": 0,
+  "stale_samples": 0,
+  "camera_stale_samples": 0,
+  "camera_skew_s": 0.0,
+  "joint_skew_s": 0.0,
+  "writer_queue_drops": 0,
+  "max_stamp_gap_s": 0.5,
+  "camera_reuse_counts": {
+    "top": 50
+  },
+  "sim_fps": 2.0,
+  "quality_pass": true,
+  "randomization": {
+    "nut_poses": {
+      "B": [
+        -0.3417272644412355,
+        -0.1695619920688304,
+        0.2806,
+        0,
+        0,
+        0.5233
+      ],
+      "A": [
+        -0.2338205204521656,
+        -0.1272600495834702,
+        0.2819,
+        0,
+        0,
+        0.5233
+      ],
+      "C": [
+        -0.30112304604412576,
+        -0.04475600554516043,
+        0.2872,
+        0,
+        0,
+        0.5233
+      ]
+    }
+  }
+}

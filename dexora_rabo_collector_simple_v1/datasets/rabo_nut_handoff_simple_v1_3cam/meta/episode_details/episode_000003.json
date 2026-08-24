@@ -1,0 +1,51 @@
+{
+  "episode_index": 3,
+  "length": 1656,
+  "tasks": [
+    "完成三个螺母的双臂接力搬运，顺序为B、C、A"
+  ],
+  "success": true,
+  "failure_reason": "",
+  "sample_timeouts": 0,
+  "stale_samples": 0,
+  "camera_stale_samples": 1652,
+  "camera_skew_s": 166.13191441199888,
+  "joint_skew_s": 0.11293800599923998,
+  "writer_queue_drops": 0,
+  "max_stamp_gap_s": 0.10000000000002274,
+  "camera_reuse_counts": {
+    "top": 1655,
+    "wrist_left": 1655,
+    "wrist_right": 1655
+  },
+  "sim_fps": 10.0,
+  "quality_pass": false,
+  "randomization": {
+    "nut_poses": {
+      "B": [
+        -0.3218162993334385,
+        -0.1879099524941912,
+        0.2806,
+        0,
+        0,
+        0.5233
+      ],
+      "A": [
+        -0.21883869948008533,
+        -0.12877036027965905,
+        0.2819,
+        0,
+        0,
+        0.5233
+      ],
+      "C": [
+        -0.2995054428093943,
+        -0.06081898828669973,
+        0.2872,
+        0,
+        0,
+        0.5233
+      ]
+    }
+  }
+}

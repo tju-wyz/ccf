@@ -1,0 +1,49 @@
+{
+  "episode_index": 20,
+  "length": 631,
+  "tasks": [
+    "双臂协作依次抓取B、C、A螺母，由右手递交左手并放入目标区"
+  ],
+  "success": false,
+  "failure_reason": "",
+  "sample_timeouts": 0,
+  "stale_samples": 0,
+  "camera_stale_samples": 0,
+  "camera_skew_s": 0.0,
+  "joint_skew_s": 0.0,
+  "writer_queue_drops": 0,
+  "max_stamp_gap_s": 0.20000000000000284,
+  "camera_reuse_counts": {
+    "top": 298
+  },
+  "sim_fps": 5.0,
+  "quality_pass": true,
+  "randomization": {
+    "nut_poses": {
+      "B": [
+        -0.34741035717093266,
+        -0.1698050753249417,
+        0.2806,
+        0,
+        0,
+        0.5233
+      ],
+      "A": [
+        -0.25259345384004794,
+        -0.1203471028523388,
+        0.2819,
+        0,
+        0,
+        0.5233
+      ],
+      "C": [
+        -0.29151380160931195,
+        -0.05988006449086728,
+        0.2872,
+        0,
+        0,
+        0.5233
+      ]
+    }
+  }
+}

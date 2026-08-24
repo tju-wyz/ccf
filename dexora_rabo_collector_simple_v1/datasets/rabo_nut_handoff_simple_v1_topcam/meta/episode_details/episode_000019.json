@@ -1,0 +1,49 @@
+{
+  "episode_index": 19,
+  "length": 617,
+  "tasks": [
+    "将B、C、A螺母依次从右手交接给左手并放到指定位置"
+  ],
+  "success": false,
+  "failure_reason": "",
+  "sample_timeouts": 0,
+  "stale_samples": 0,
+  "camera_stale_samples": 0,
+  "camera_skew_s": 0.0,
+  "joint_skew_s": 0.0,
+  "writer_queue_drops": 0,
+  "max_stamp_gap_s": 0.20000000000000284,
+  "camera_reuse_counts": {
+    "top": 268
+  },
+  "sim_fps": 5.0,
+  "quality_pass": true,
+  "randomization": {
+    "nut_poses": {
+      "B": [
+        -0.35964952051422455,
+        -0.18640468916481973,
+        0.2806,
+        0,
+        0,
+        0.5233
+      ],
+      "A": [
+        -0.23705932742641772,
+        -0.12933517690018606,
+        0.2819,
+        0,
+        0,
+        0.5233
+      ],
+      "C": [
+        -0.31014916643509804,
+        -0.06236469855498511,
+        0.2872,
+        0,
+        0,
+        0.5233
+      ]
+    }
+  }
+}

@@ -1,0 +1,8 @@
+numpy>=1.24,<3
+pyarrow>=14
+PyYAML>=6
+
+# Rabo 平台实际采集时还需要平台预装/安装：
+# rabo-robocap>=2.0.7
+# rabo-dev-kit>=1.1
+# ROS2 对应版本的 rclpy、sensor_msgs；cv2 使用平台预装版本，禁用 cv_bridge

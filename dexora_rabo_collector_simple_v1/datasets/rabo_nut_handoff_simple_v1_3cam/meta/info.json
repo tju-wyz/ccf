@@ -1,0 +1,248 @@
+{
+  "codebase_version": "v2.1",
+  "robot_type": "linker_a7_o6_bimanual",
+  "total_episodes": 7,
+  "total_frames": 9030,
+  "total_tasks": 5,
+  "total_videos": 21,
+  "total_chunks": 1,
+  "chunks_size": 1000,
+  "fps": 10,
+  "splits": {
+    "train": "0:7"
+  },
+  "data_path": "data/chunk-{episode_chunk:03d}/episode_{episode_index:06d}.parquet",
+  "video_path": "videos/chunk-{episode_chunk:03d}/{video_key}/episode_{episode_index:06d}.mp4",
+  "features": {
+    "observation.images.top": {
+      "dtype": "video",
+      "shape": [
+        270,
+        480,
+        3
+      ],
+      "names": [
+        "height",
+        "width",
+        "channels"
+      ],
+      "info": {
+        "video.height": 270,
+        "video.width": 480,
+        "video.codec": "mp4v",
+        "video.pix_fmt": "yuv420p",
+        "video.is_depth_map": false,
+        "video.fps": 10,
+        "video.channels": 3,
+        "has_audio": false
+      }
+    },
+    "observation.images.wrist_left": {
+      "dtype": "video",
+      "shape": [
+        270,
+        480,
+        3
+      ],
+      "names": [
+        "height",
+        "width",
+        "channels"
+      ],
+      "info": {
+        "video.height": 270,
+        "video.width": 480,
+        "video.codec": "mp4v",
+        "video.pix_fmt": "yuv420p",
+        "video.is_depth_map": false,
+        "video.fps": 10,
+        "video.channels": 3,
+        "has_audio": false
+      }
+    },
+    "observation.images.wrist_right": {
+      "dtype": "video",
+      "shape": [
+        270,
+        480,
+        3
+      ],
+      "names": [
+        "height",
+        "width",
+        "channels"
+      ],
+      "info": {
+        "video.height": 270,
+        "video.width": 480,
+        "video.codec": "mp4v",
+        "video.pix_fmt": "yuv420p",
+        "video.is_depth_map": false,
+        "video.fps": 10,
+        "video.channels": 3,
+        "has_audio": false
+      }
+    },
+    "observation.state": {
+      "dtype": "float32",
+      "shape": [
+        26
+      ],
+      "names": [
+        "left_arm_joint_1",
+        "left_arm_joint_2",
+        "left_arm_joint_3",
+        "left_arm_joint_4",
+        "left_arm_joint_5",
+        "left_arm_joint_6",
+        "left_arm_joint_7",
+        "right_arm_joint_1",
+        "right_arm_joint_2",
+        "right_arm_joint_3",
+        "right_arm_joint_4",
+        "right_arm_joint_5",
+        "right_arm_joint_6",
+        "right_arm_joint_7",
+        "left_hand_thumb_cmc_yaw",
+        "left_hand_thumb_cmc_pitch",
+        "left_hand_index_mcp_pitch",
+        "left_hand_middle_mcp_pitch",
+        "left_hand_ring_mcp_pitch",
+        "left_hand_pinky_mcp_pitch",
+        "right_hand_thumb_cmc_yaw",
+        "right_hand_thumb_cmc_pitch",
+        "right_hand_index_mcp_pitch",
+        "right_hand_middle_mcp_pitch",
+        "right_hand_ring_mcp_pitch",
+        "right_hand_pinky_mcp_pitch"
+      ]
+    },
+    "observation.full_state": {
+      "dtype": "float32",
+      "shape": [
+        36
+      ],
+      "names": [
+        "left_arm_joint_1",
+        "left_arm_joint_2",
+        "left_arm_joint_3",
+        "left_arm_joint_4",
+        "left_arm_joint_5",
+        "left_arm_joint_6",
+        "left_arm_joint_7",
+        "right_arm_joint_1",
+        "right_arm_joint_2",
+        "right_arm_joint_3",
+        "right_arm_joint_4",
+        "right_arm_joint_5",
+        "right_arm_joint_6",
+        "right_arm_joint_7",
+        "left_hand_thumb_cmc_yaw",
+        "left_hand_thumb_cmc_pitch",
+        "left_hand_thumb_ip",
+        "left_hand_index_mcp_pitch",
+        "left_hand_index_dip",
+        "left_hand_middle_mcp_pitch",
+        "left_hand_middle_dip",
+        "left_hand_ring_mcp_pitch",
+        "left_hand_ring_dip",
+        "left_hand_pinky_mcp_pitch",
+        "left_hand_pinky_dip",
+        "right_hand_thumb_cmc_yaw",
+        "right_hand_thumb_cmc_pitch",
+        "right_hand_thumb_ip",
+        "right_hand_index_mcp_pitch",
+        "right_hand_index_dip",
+        "right_hand_middle_mcp_pitch",
+        "right_hand_middle_dip",
+        "right_hand_ring_mcp_pitch",
+        "right_hand_ring_dip",
+        "right_hand_pinky_mcp_pitch",
+        "right_hand_pinky_dip"
+      ]
+    },
+    "action": {
+      "dtype": "float32",
+      "shape": [
+        26
+      ],
+      "names": [
+        "left_arm_joint_1",
+        "left_arm_joint_2",
+        "left_arm_joint_3",
+        "left_arm_joint_4",
+        "left_arm_joint_5",
+        "left_arm_joint_6",
+        "left_arm_joint_7",
+        "right_arm_joint_1",
+        "right_arm_joint_2",
+        "right_arm_joint_3",
+        "right_arm_joint_4",
+        "right_arm_joint_5",
+        "right_arm_joint_6",
+        "right_arm_joint_7",
+        "left_hand_thumb_cmc_yaw",
+        "left_hand_thumb_cmc_pitch",
+        "left_hand_index_mcp_pitch",
+        "left_hand_middle_mcp_pitch",
+        "left_hand_ring_mcp_pitch",
+        "left_hand_pinky_mcp_pitch",
+        "right_hand_thumb_cmc_yaw",
+        "right_hand_thumb_cmc_pitch",
+        "right_hand_index_mcp_pitch",
+        "right_hand_middle_mcp_pitch",
+        "right_hand_ring_mcp_pitch",
+        "right_hand_pinky_mcp_pitch"
+      ]
+    },
+    "timestamp": {
+      "dtype": "float32",
+      "shape": [
+        1
+      ],
+      "names": null
+    },
+    "frame_index": {
+      "dtype": "int64",
+      "shape": [
+        1
+      ],
+      "names": null
+    },
+    "episode_index": {
+      "dtype": "int64",
+      "shape": [
+        1
+      ],
+      "names": null
+    },
+    "index": {
+      "dtype": "int64",
+      "shape": [
+        1
+      ],
+      "names": null
+    },
+    "task_index": {
+      "dtype": "int64",
+      "shape": [
+        1
+      ],
+      "names": null
+    },
+    "phase": {
+      "dtype": "string",
+      "shape": [
+        1
+      ],
+      "names": null
+    },
+    "phase_index": {
+      "dtype": "int64",
+      "shape": [
+        1
+      ],
+      "names": null
+    }
+  }
+}
